@@ -1,7 +1,7 @@
 Laporan Dokumentasi Kode HTML - Portofolio Web
 Berikut adalah penjelasan dan bedah kode per snippet untuk file index.html pada proyek web portofolio ini. Laporan ini bisa kamu copy-paste langsung ke dalam file README1.md.
 
-1. Bagian Konfigurasi Dokumen & Header ()
+1. Bagian Konfigurasi Dokumen & Header 
 ```
 <!DOCTYPE html>
 <html lang="id">
@@ -14,17 +14,17 @@ Berikut adalah penjelasan dan bedah kode per snippet untuk file index.html pada 
 ```
 Penjelasan Snippet:
 
-<!DOCTYPE html> dan <html lang="id">: Mendefinisikan bahwa dokumen ini menggunakan standar HTML5 dengan bahasa utama Bahasa Indonesia.
+``<!DOCTYPE html>`` dan ``<html lang="id">`` : Mendefinisikan bahwa dokumen ini menggunakan standar HTML5 dengan bahasa utama Bahasa Indonesia.
 
-<meta charset="UTF-8">: Mengatur encoding karakter agar teks, simbol, atau emoji dapat terbaca dengan benar di berbagai browser.
+``<meta charset="UTF-8">`` : Mengatur encoding karakter agar teks, simbol, atau emoji dapat terbaca dengan benar di berbagai browser.
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">: Mengatur agar tata letak halaman bersifat responsif dan menyesuaikan ukuran layar perangkat pengguna (baik mobile maupun desktop).
+``<meta name="viewport" content="width=device-width, initial-scale=1.0">`` : Mengatur agar tata letak halaman bersifat responsif dan menyesuaikan ukuran layar perangkat pengguna (baik mobile maupun desktop).
 
-<title>: Menentukan judul tab yang tampil pada jendela browser.
+``<title>``: Menentukan judul tab yang tampil pada jendela browser.
 
-<link rel="stylesheet" href="style.css">: Menghubungkan file HTML dengan lembar gaya eksternal (stylesheet) untuk mengatur visual dan tata letak.
+``<link rel="stylesheet" href="style.css">``: Menghubungkan file HTML dengan lembar gaya eksternal (stylesheet) untuk mengatur visual dan tata letak.
 
-2. Navigasi Utama ( & )
+2. Navigasi Utama 
 ```
     <header>
         <nav>
@@ -45,15 +45,15 @@ Penjelasan Snippet:
 ```
 Penjelasan Snippet:
 
-<header> & <nav>: Elemen semantik untuk membungkus area menu navigasi utama situs.
+``<header>`` & ``<nav>``: Elemen semantik untuk membungkus area menu navigasi utama situs.
 
-<div class="logo">Mai.</div>: Menampilkan teks identitas atau merek singkat di bagian kiri navigasi.
+``<div class="logo">Mai.</div>``: Menampilkan teks identitas atau merek singkat di bagian kiri navigasi.
 
-<ul> & <li>: Daftar menu navigasi yang menggunakan tautan internal (anchor links seperti #home, #about, dll.) untuk mempermudah pengguna berpindah antar bagian halaman secara mulus (smooth scroll).
+``<ul>`` & ``<li>``: Daftar menu navigasi yang menggunakan tautan internal (anchor links seperti #home, #about, dll.) untuk mempermudah pengguna berpindah antar bagian halaman secara mulus (smooth scroll).
 
 Tombol Download CV: Menggunakan atribut download pada elemen <a> agar pengunjung dapat mengunduh dokumen CV secara langsung.
 
-3. Bagian Utama: Beranda / Home ()
+3. Bagian Utama: Beranda / Home 
 ```
         <section id="home">
             <div class="hero-content">
@@ -73,15 +73,15 @@ Tombol Download CV: Menggunakan atribut download pada elemen <a> agar pengunjung
 
 Penjelasan Snippet:
 
-<section id="home">: Bagian awal atau hero section yang menyambut pengunjung.
+``<section id="home">``: Bagian awal atau hero section yang menyambut pengunjung.
 
 .hero-image: Memuat foto profil pribadi yang diatur berbentuk lingkaran (border-radius: 50%) dengan tambahan efek bayangan tipis (box-shadow).
 
-<h1> & <h3>: Menampilkan nama lengkap serta identitas profesional secara jelas sebagai perkenalan utama.
+``<h1>`` & ``<h3>``: Menampilkan nama lengkap serta identitas profesional secara jelas sebagai perkenalan utama.
 
 .cta-buttons: Berisi tombol panggilan aksi (Call to Action) yang mengarahkan pengguna secara cepat menuju bagian portofolio atau kontak.
 
-4. Bagian Tentang Saya ()
+4. Bagian Tentang Saya 
 ```
         <section id="about">
             <h2>Tentang Saya</h2>
@@ -90,11 +90,11 @@ Penjelasan Snippet:
 ```
 Penjelasan Snippet:
 
-<section id="about">: Bagian deskripsi diri atau latar belakang akademis.
+``<section id="about">``: Bagian deskripsi diri atau latar belakang akademis.
 
 Berisi narasi singkat mengenai status studi di Teknik Informatika ITS, sifat adaptif, serta komitmen dalam menjalankan setiap tugas maupun proyek.
 
-5. Bagian Skillset & Toolset ( & )
+5. Bagian Skillset & Toolset 
 ```
         <section id="skills">
             <h2>Skillset</h2>
@@ -121,7 +121,7 @@ Berisi narasi singkat mengenai status studi di Teknik Informatika ITS, sifat ada
 ```
 Penjelasan Snippet:
 
-skills: Menggunakan daftar berbasis poin (<ul> dan <li>) untuk merinci penguasaan bahasa pemrograman dan kemampuan lunak (soft skills).
+skills: Menggunakan daftar berbasis poin (``<ul>`` dan ``<li>``) untuk merinci penguasaan bahasa pemrograman dan kemampuan lunak (soft skills).
 
 tools: Menggunakan tata letak grid (.tools-grid) dan kartu individual (.tool-card) untuk menampilkan perangkat lunak serta sistem operasi penunjang pengembangan teknologi yang dikuasai.
 
@@ -153,11 +153,11 @@ tools: Menggunakan tata letak grid (.tools-grid) dan kartu individual (.tool-car
 ```
 Penjelasan Snippet:
 
-Menggunakan tag semantik <article> untuk memisahkan setiap entri riwayat pendidikan dan pengalaman organisasi secara terstruktur.
+Menggunakan tag semantik ``<article>`` untuk memisahkan setiap entri riwayat pendidikan dan pengalaman organisasi secara terstruktur.
 
 Menampilkan rekam jejak akademis serta keaktifan dalam kepanitiaan kampus secara kronologis.
 
-7. Bagian Portofolio & Galeri ( & )
+7. Bagian Portofolio & Galeri 
 ```
         <section id="portfolio">
             <h2>Portofolio Project</h2>
@@ -182,7 +182,7 @@ portfolio: Menyediakan wadah kartu proyek dengan status informasi "Coming Soon" 
 
 gallery: Menyediakan kerangka bagian galeri dokumentasi yang fleksibel untuk pengembangan atau penambahan konten foto di masa mendatang.
 
-8. Bagian Kontak & Footer ( & )
+8. Bagian Kontak & Footer 
 ```
         <section id="contact">
             <h2>Hubungi Saya</h2>
@@ -204,4 +204,4 @@ Penjelasan Snippet:
 
 contact: Menyediakan tautan langsung interaktif menuju alamat surel (mailto) dan aplikasi perpesanan WhatsApp (wa.me) agar mudah dihubungi.
 
-<footer>: Menampilkan hak cipta kepemilikan situs beserta tautan menuju profil profesional seperti LinkedIn.
+``<footer>``: Menampilkan hak cipta kepemilikan situs beserta tautan menuju profil profesional seperti LinkedIn.
