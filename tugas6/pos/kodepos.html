@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Kode Pos Indonesia</title>
+    <link rel="stylesheet" href="kodepos.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Pencarian Kode Pos Indonesia</h1>
+
+        <p class="description">
+            Pilih wilayah untuk melihat daftar kode pos.
+        </p>
+
+        <form id="searchForm">
+            <label for="province">Provinsi</label>
+            <select id="province" required>
+                <option value="">Memuat provinsi...</option>
+            </select>
+
+            <label for="regency">Kabupaten/Kota</label>
+            <select id="regency" disabled required>
+                <option value="">Pilih kabupaten/kota</option>
+            </select>
+
+            <label for="district">Kecamatan</label>
+            <select id="district" disabled required>
+                <option value="">Pilih kecamatan</option>
+            </select>
+
+            <button type="submit" id="searchButton" disabled>
+                Cari Kode Pos
+            </button>
+        </form>
+
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <section id="results" hidden>
+            <h2>Hasil Pencarian</h2>
+
+            <p id="areaInfo"></p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Desa/Kelurahan</th>
+                            <th>Kode Pos</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="kodepos.js"></script>
+</body>
+</html>
