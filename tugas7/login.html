@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | My Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <nav class="navbar navbar-default auth-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#authNavbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <span class="glyphicon glyphicon-globe"></span>
+                    My Website
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="authNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container auth-container">
+        <div class="row auth-card">
+
+            <section class="col-sm-6 auth-visual">
+                <div class="visual-content">
+                    <span class="glyphicon glyphicon-lock visual-icon"></span>
+                    <h1>Welcome Back!</h1>
+                    <p>
+                        Sign in to access your account and continue
+                        exploring our website.
+                    </p>
+                    <a href="index.html" class="btn btn-outline-light">
+                        Explore Website
+                    </a>
+                </div>
+            </section>
+
+            <section class="col-sm-6 auth-form-section">
+                <div class="auth-form-wrapper">
+                    <h2>Sign In</h2>
+                    <p class="text-muted">
+                        Enter your details to continue.
+                    </p>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email"
+                                       class="form-control"
+                                       id="loginEmail"
+                                       name="email"
+                                       placeholder="name@example.com"
+                                       autocomplete="email"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                </span>
+                                <input type="password"
+                                       class="form-control"
+                                       id="loginPassword"
+                                       name="password"
+                                       placeholder="Enter your password"
+                                       autocomplete="current-password"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-primary btn-block auth-button">
+                            Sign In
+                        </button>
+
+                        <p id="loginMessage"
+                           class="form-message"
+                           role="status"
+                           aria-live="polite"></p>
+                    </form>
+
+                    <div class="auth-divider"><span>OR</span></div>
+
+                    <p class="auth-switch">
+                        Don't have an account?
+                        <a href="register.html">Register here</a>
+                    </p>
+
+                    <p class="back-link">
+                        <a href="index.html">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                            Back to Home
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="auth-footer">
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var loginMessage = document.getElementById("loginMessage");
+
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            loginMessage.textContent =
+                "Form validation successful. Demo only: no account was authenticated.";
+            loginMessage.className = "form-message text-info";
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

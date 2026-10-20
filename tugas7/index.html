@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | My Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>My Website</h1>
+            <p>A Simple Bootstrap Content Page</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-default main-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#mainNavbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">My Website</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <div class="row">
+
+            <aside class="col-sm-4 col-md-3">
+                <div class="sidebar">
+                    <h3>Quick Menu</h3>
+
+                    <div class="menu-item">
+                        <h4>Menu Item 1</h4>
+                        <p>Discover useful information on our website.</p>
+                        <a href="#feature1" class="btn btn-default btn-sm">
+                            Explore
+                        </a>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Menu Item 2</h4>
+                        <p>Find resources to help you get started.</p>
+                        <a href="#feature2" class="btn btn-default btn-sm">
+                            Discover
+                        </a>
+                    </div>
+
+                    <div class="menu-item">
+                        <h4>Menu Item 3</h4>
+                        <p>Read more about our main content.</p>
+                        <a href="#article" class="btn btn-default btn-sm">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="col-sm-8 col-md-9">
+                <div class="content-panel">
+                    <h2>Welcome to My Website</h2>
+                    <p class="text-muted">
+                        Explore our features and discover more information.
+                    </p>
+
+                    <div class="row feature-row">
+                        <article class="col-md-6" id="feature1">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-globe feature-icon"></span>
+                                <h3>Feature 1</h3>
+                                <p>
+                                    Discover useful information and explore
+                                    the different features available on
+                                    this website.
+                                </p>
+                                <a href="#article" class="btn btn-primary">
+                                    Learn More
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6" id="feature2">
+                            <div class="feature-box">
+                                <span class="glyphicon glyphicon-education feature-icon"></span>
+                                <h3>Feature 2</h3>
+                                <p>
+                                    Learn something new and find resources
+                                    that can support your learning journey.
+                                </p>
+                                <a href="register.html" class="btn btn-success">
+                                    Get Started
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <article class="main-article" id="article">
+                        <h3>Main Article</h3>
+                        <p>
+                            Welcome to our main content section. This area
+                            can be used to display articles, announcements,
+                            information, or other important content.
+                        </p>
+                        <p>
+                            This page demonstrates the Bootstrap grid system,
+                            navigation bar, buttons, and responsive layout.
+                            Resize your browser window to see how the layout
+                            adapts to different screen sizes.
+                        </p>
+                    </article>
+
+                    <section class="about-section" id="about">
+                        <h3>About Us</h3>
+                        <p>
+                            My Website is a simple example of a responsive
+                            website built with Bootstrap 3 and custom CSS.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <p>&copy; 2026 My Website. All rights reserved.</p>
+            <p>
+                <a href="#about">About</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="mailto:hello@example.com">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

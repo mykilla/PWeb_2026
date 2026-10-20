@@ -1,0 +1,543 @@
+
+/* ========================================
+   GENERAL STYLES
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #2d3748;
+    background-color: #f4f7fb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: #2868b2;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: #173b70;
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 5px;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* ========================================
+   HOME PAGE HEADER
+======================================== */
+
+.site-header {
+    padding: 35px 0;
+    color: white;
+    background: linear-gradient(120deg, #173b70, #3478c8);
+}
+
+.site-header h1 {
+    margin: 0 0 5px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.site-header p {
+    margin: 0;
+    color: #e0ecff;
+}
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+.main-navbar,
+.auth-navbar {
+    margin-bottom: 0;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-navbar {
+    margin-bottom: 25px;
+}
+
+.navbar-default .navbar-brand {
+    color: #24569a;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #173b70;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #46566d;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #24569a;
+    background-color: #edf4ff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #d9e1ec;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #edf4ff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #24569a;
+}
+
+/* ========================================
+   HOME PAGE CONTENT
+======================================== */
+
+.main-content {
+    min-height: 450px;
+    margin-bottom: 40px;
+}
+
+.sidebar,
+.content-panel {
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #e8edf4;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(32, 55, 85, 0.05);
+}
+
+.sidebar h3,
+.content-panel h2,
+.main-article h3,
+.about-section h3 {
+    color: #24569a;
+    font-weight: 700;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.menu-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #e8edf4;
+}
+
+.menu-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.menu-item h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu-item p {
+    color: #68778b;
+    font-size: 13px;
+}
+
+.menu-item .btn {
+    margin-top: 5px;
+}
+
+.content-panel h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.feature-row {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.feature-box {
+    min-height: 265px;
+    margin-bottom: 20px;
+    padding: 22px;
+    background-color: #f8faff;
+    border: 1px solid #e2eaf5;
+    border-radius: 8px;
+}
+
+.feature-box h3 {
+    margin-top: 12px;
+    color: #24569a;
+    font-weight: 700;
+}
+
+.feature-icon {
+    color: #3478c8;
+    font-size: 28px;
+}
+
+.feature-box p {
+    min-height: 65px;
+    color: #64748b;
+}
+
+.main-article,
+.about-section {
+    padding-top: 20px;
+    border-top: 1px solid #e8edf4;
+}
+
+.main-article h3,
+.about-section h3 {
+    margin-top: 0;
+}
+
+.main-article p,
+.about-section p {
+    color: #566579;
+}
+
+/* ========================================
+   HOME PAGE FOOTER
+======================================== */
+
+.site-footer {
+    padding: 25px 0;
+    color: #e5edf8;
+    background-color: #17304f;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    margin: 0 8px;
+    color: #bcd7ff;
+}
+
+.site-footer a:hover {
+    color: white;
+}
+
+/* ========================================
+   LOGIN AND REGISTER PAGES
+======================================== */
+
+.auth-page {
+    min-height: 100vh;
+    background-color: #f2f5fa;
+}
+
+.auth-container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.auth-card {
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(27, 52, 86, 0.12);
+}
+
+/* Left visual panel */
+
+.auth-visual {
+    display: flex;
+    min-height: 560px;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 35px;
+    color: white;
+    background: linear-gradient(145deg, #173b70, #4285d4);
+}
+
+.visual-content {
+    width: 100%;
+    text-align: center;
+}
+
+.visual-icon {
+    margin-bottom: 15px;
+    font-size: 65px;
+}
+
+.visual-content h1 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.visual-content p {
+    margin-bottom: 28px;
+    color: #e3edff;
+}
+
+.btn-outline-light {
+    padding: 10px 22px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    color: #24569a;
+    background-color: white;
+}
+
+/* Right form panel */
+
+.auth-form-section {
+    padding: 40px 35px;
+    background-color: white;
+}
+
+.auth-form-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.auth-form-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #1e3a5f;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.auth-form-wrapper > p.text-muted {
+    margin-bottom: 25px;
+}
+
+.auth-form-wrapper label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.auth-form-wrapper .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form-wrapper .form-control {
+    height: 44px;
+    border-color: #d9e1ec;
+    border-radius: 0 5px 5px 0;
+    box-shadow: none;
+}
+
+.auth-form-wrapper .form-control:focus {
+    border-color: #4285d4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 212, 0.12);
+}
+
+.auth-form-wrapper .input-group-addon {
+    min-width: 42px;
+    color: #52739c;
+    background-color: #f5f8fc;
+    border-color: #d9e1ec;
+}
+
+.auth-form-wrapper .checkbox {
+    margin: 18px 0;
+}
+
+.auth-form-wrapper .checkbox label {
+    font-weight: 400;
+}
+
+.auth-form-wrapper .checkbox input {
+    margin-top: 7px;
+}
+
+.auth-button {
+    min-height: 46px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #2868b2;
+    border-color: #2868b2;
+}
+
+.auth-button:hover,
+.auth-button:focus {
+    color: white;
+    background-color: #1c508d;
+    border-color: #1c508d;
+}
+
+.form-message {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    flex: 1;
+    height: 1px;
+    background-color: #e2e8f0;
+    content: "";
+}
+
+.auth-switch {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.auth-switch a,
+.back-link a {
+    color: #2868b2;
+    font-weight: 600;
+}
+
+.auth-switch a:hover,
+.back-link a:hover {
+    color: #173b70;
+}
+
+.back-link {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Authentication page footer */
+
+.auth-footer {
+    padding: 20px 15px;
+    color: #718096;
+    text-align: center;
+}
+
+.auth-footer p {
+    margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 991px) {
+    .auth-form-section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .auth-visual {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .visual-content h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        padding: 25px 0;
+    }
+
+    .site-header h1 {
+        font-size: 28px;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .content-panel {
+        padding: 18px;
+    }
+
+    .main-content {
+        margin-bottom: 25px;
+    }
+
+    .feature-box {
+        min-height: auto;
+    }
+
+    .feature-box p {
+        min-height: 0;
+    }
+
+    .auth-container {
+        padding: 25px 15px;
+    }
+
+    .auth-card {
+        border-radius: 10px;
+    }
+
+    .auth-visual {
+        min-height: 280px;
+        padding: 35px 25px;
+    }
+
+    .visual-icon {
+        font-size: 48px;
+    }
+
+    .visual-content h1 {
+        font-size: 27px;
+    }
+
+    .auth-form-section {
+        padding: 35px 25px;
+    }
+
+    .auth-form-wrapper {
+        max-width: 100%;
+    }
+
+    .auth-form-wrapper h2 {
+        font-size: 27px;
+    }
+
+    .site-footer a {
+        display: inline-block;
+        margin: 4px 7px;
+    }
+}
+
